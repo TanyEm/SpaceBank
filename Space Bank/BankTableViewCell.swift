@@ -9,6 +9,10 @@
 import UIKit
 
 class BankTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var bankName: UILabel!
+    @IBOutlet weak var bankAddress: UILabel!
+    @IBOutlet weak var bankSchedule: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()

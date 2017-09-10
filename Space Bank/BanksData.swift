@@ -1,5 +1,5 @@
 //
-//  BanksData.swift
+//  NetworkManager.swift
 //  Space Bank
 //
 //  Created by Tanya Tomchuk on 08/09/2017.
@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+class BanksData {
+    var name = ""
+    var address = ""
+    var schedule = ""
+}

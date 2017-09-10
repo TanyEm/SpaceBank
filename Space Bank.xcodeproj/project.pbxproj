@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		73C0CA291F6276F8002E6597 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C0CA281F6276F8002E6597 /* AppDelegate.swift */; };
-		73C0CA2B1F6276F8002E6597 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C0CA2A1F6276F8002E6597 /* ViewController.swift */; };
 		73C0CA2E1F6276F8002E6597 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73C0CA2C1F6276F8002E6597 /* Main.storyboard */; };
 		73C0CA301F6276F8002E6597 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73C0CA2F1F6276F8002E6597 /* Assets.xcassets */; };
 		73C0CA331F6276F8002E6597 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73C0CA311F6276F8002E6597 /* LaunchScreen.storyboard */; };
+		73C0CA3B1F6283C0002E6597 /* BanksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C0CA3A1F6283C0002E6597 /* BanksTableViewController.swift */; };
+		73C0CA3D1F6283FB002E6597 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C0CA3C1F6283FA002E6597 /* NetworkManager.swift */; };
+		73C0CA3F1F62846D002E6597 /* BanksData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C0CA3E1F62846D002E6597 /* BanksData.swift */; };
+		73C0CA411F628AC3002E6597 /* BankTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C0CA401F628AC3002E6597 /* BankTableViewCell.swift */; };
+		73C0CA451F62B64D002E6597 /* bank.json in Resources */ = {isa = PBXBuildFile; fileRef = 73C0CA441F62B64D002E6597 /* bank.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		73C0CA251F6276F8002E6597 /* Space Bank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Space Bank.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73C0CA281F6276F8002E6597 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		73C0CA2A1F6276F8002E6597 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		73C0CA2D1F6276F8002E6597 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		73C0CA2F1F6276F8002E6597 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73C0CA321F6276F8002E6597 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		73C0CA341F6276F8002E6597 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73C0CA3A1F6283C0002E6597 /* BanksTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BanksTableViewController.swift; sourceTree = "<group>"; };
+		73C0CA3C1F6283FA002E6597 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		73C0CA3E1F62846D002E6597 /* BanksData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BanksData.swift; sourceTree = "<group>"; };
+		73C0CA401F628AC3002E6597 /* BankTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankTableViewCell.swift; sourceTree = "<group>"; };
+		73C0CA441F62B64D002E6597 /* bank.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bank.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +63,15 @@
 			isa = PBXGroup;
 			children = (
 				73C0CA281F6276F8002E6597 /* AppDelegate.swift */,
-				73C0CA2A1F6276F8002E6597 /* ViewController.swift */,
 				73C0CA2C1F6276F8002E6597 /* Main.storyboard */,
+				73C0CA3A1F6283C0002E6597 /* BanksTableViewController.swift */,
 				73C0CA2F1F6276F8002E6597 /* Assets.xcassets */,
 				73C0CA311F6276F8002E6597 /* LaunchScreen.storyboard */,
 				73C0CA341F6276F8002E6597 /* Info.plist */,
+				73C0CA3C1F6283FA002E6597 /* NetworkManager.swift */,
+				73C0CA3E1F62846D002E6597 /* BanksData.swift */,
+				73C0CA401F628AC3002E6597 /* BankTableViewCell.swift */,
+				73C0CA441F62B64D002E6597 /* bank.json */,
 			);
 			path = "Space Bank";
 			sourceTree = "<group>";
@@ -125,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				73C0CA331F6276F8002E6597 /* LaunchScreen.storyboard in Resources */,
+				73C0CA451F62B64D002E6597 /* bank.json in Resources */,
 				73C0CA301F6276F8002E6597 /* Assets.xcassets in Resources */,
 				73C0CA2E1F6276F8002E6597 /* Main.storyboard in Resources */,
 			);
@@ -137,8 +150,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73C0CA2B1F6276F8002E6597 /* ViewController.swift in Sources */,
+				73C0CA3D1F6283FB002E6597 /* NetworkManager.swift in Sources */,
 				73C0CA291F6276F8002E6597 /* AppDelegate.swift in Sources */,
+				73C0CA3B1F6283C0002E6597 /* BanksTableViewController.swift in Sources */,
+				73C0CA411F628AC3002E6597 /* BankTableViewCell.swift in Sources */,
+				73C0CA3F1F62846D002E6597 /* BanksData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
