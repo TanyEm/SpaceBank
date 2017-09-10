@@ -10,7 +10,7 @@ import UIKit
 
 class BanksTableViewController: UITableViewController {
     var banks = [BanksData]()
-//    let spinner = UIActivityIndicatorView()
+    let spinner = UIActivityIndicatorView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,16 +20,16 @@ class BanksTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
-//        spinner.hidesWhenStopped = true
-//        spinner.center = tableView.center
-//        spinner.activityIndicatorViewStyle = .gray
-//        spinner.startAnimating()
-//        tableView.addSubview(spinner)
+        spinner.hidesWhenStopped = true
+        spinner.center = tableView.center
+        spinner.activityIndicatorViewStyle = .gray
+        spinner.startAnimating()
+        tableView.addSubview(spinner)
         
         NetworkManager.shared.getBanks { (banks: [BanksData]) -> Void in
             self.banks = banks
-//            self.spinner.stopAnimating()
-//            self.spinner.removeFromSuperview()
+            self.spinner.stopAnimating()
+            self.spinner.removeFromSuperview()
             self.tableView.reloadData()
         }
     }
